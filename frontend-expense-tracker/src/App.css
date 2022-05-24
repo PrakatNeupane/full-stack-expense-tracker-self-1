@@ -1,0 +1,16 @@
+.main {
+  min-height: 72vh;
+}
+
+.login-comp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-comp form {
+  background-color: rgb(213, 208, 208);
+  width: 400px;
+  padding: 1rem;
+  border-radius: 5px;
+}

@@ -1,12 +1,22 @@
-import { Button } from 'react-bootstrap';
 import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { LoginPage } from './pages/LoginPage';
+import { RegisterPage } from './pages/RegisterPage';
+import { Dashboard } from './pages/Dashboard';
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello </h1>
-      <Button variant='secondary'>Hey <i class="fa-solid fa-0"></i></Button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<LoginPage />}></Route>
+        <Route path='/register' element={<RegisterPage />}></Route>
+        <Route path='/dashboard' element={<Dashboard />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
