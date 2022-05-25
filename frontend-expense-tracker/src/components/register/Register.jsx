@@ -2,12 +2,16 @@ import React from "react";
 import { Form, Row, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export const Login = () => {
+export const Register = () => {
   return (
     <Row className="login-comp mt-3">
       <Form>
-        <h3>Welcome back</h3>
+        <h3>Register To Join Us</h3>
         <hr />
+        <Form.Group className="mb-3" controlId="formGroupEmail">
+          <Form.Label>Full Name</Form.Label>
+          <Form.Control type="text" placeholder="Enter email" />
+        </Form.Group>
         <Form.Group className="mb-3" controlId="formGroupEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -17,9 +21,9 @@ export const Login = () => {
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
 
-        <Button variant="primary">Login</Button>
+        <Button variant="success">Register</Button>
         <div className="text-end">
-          New here? <Link to="/register">Register</Link>
+          Already a member? <Link to="/">Login</Link>
         </div>
       </Form>
     </Row>
