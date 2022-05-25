@@ -1,0 +1,4 @@
+# After the frontend setup of login and registration
+1. receive the form data
+2. pass the data to another function
+3. function to call the api
