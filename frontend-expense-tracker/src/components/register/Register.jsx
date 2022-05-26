@@ -30,6 +30,7 @@ export const Register = () => {
     setRes(data);
     setIsLoading(false);
   };
+  console.log(res.status, res.message);
   return (
     <Row className="login-comp mt-3">
       <Form onSubmit={handleOnSubmit}>
