@@ -20,7 +20,7 @@ export const Register = () => {
       ...formDt,
       [name]: value,
     });
-    // video 10 ; 1 hr 40 min
+    // video 10 - 1 hr 40 min
   };
   const handleOnSubmit = async (e) => {
     e.preventDefault();
@@ -30,7 +30,7 @@ export const Register = () => {
     setRes(data);
     setIsLoading(false);
   };
-  console.log(res.status, res.message);
+  //   console.log(res.status, res.message);
   return (
     <Row className="login-comp mt-3">
       <Form onSubmit={handleOnSubmit}>
