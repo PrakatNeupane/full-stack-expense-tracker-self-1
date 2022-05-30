@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { CustomTable } from "../components/custom-table/CustomTable";
+import { ExpensesForm } from "../components/expenses-form/ExpensesForm";
 import { MainLayout } from "../components/layout/MainLayout";
 
 export const Dashboard = () => {
@@ -9,7 +11,14 @@ export const Dashboard = () => {
     if (!user?._id) {
       navigate("/");
     }
-  }, []);
+  }, [navigate]);
 
-  return <MainLayout>Dashboard page</MainLayout>;
+  return (
+    <MainLayout>
+      <div>Dashboard</div>
+      <hr />
+      <ExpensesForm></ExpensesForm>
+      <CustomTable />
+    </MainLayout>
+  );
 };
