@@ -7,10 +7,20 @@ export const CustomTable = () => {
       <ListGroup variant="" className="custom-list">
         <ListGroup.Item>
           <span className="title">TV</span>
-          <span className="cost">$234</span>
+          <span className="cost">$5555</span>
         </ListGroup.Item>
-        <ListGroup.Item>sdf</ListGroup.Item>
-        <ListGroup.Item>sdf</ListGroup.Item>
+        <ListGroup.Item>
+          <span className="title">TV</span>
+          <span className="cost">$5555</span>
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <span className="title">TV</span>
+          <span className="cost">$5555</span>
+        </ListGroup.Item>
+        <ListGroup.Item>
+          <span className="title fw-bold">Total</span>
+          <span className="cost fw-bold">$15555</span>
+        </ListGroup.Item>
       </ListGroup>
     </div>
   );

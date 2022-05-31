@@ -17,7 +17,9 @@ dbConnection()
 
 // apis
 import userRouter from './src/routers/userRouter.js'
+import expensesRouter from './src/routers/expensesRouter.js'
 app.use("/api/v1/users", userRouter)
+app.use("/api/v1/expenses", expensesRouter)
 
 // Handling request
 app.get("*", (req, res) => {

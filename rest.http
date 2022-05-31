@@ -29,3 +29,21 @@ Content-Type: application/json
 
 
 #==== expenses api =====#
+### get expenses 
+GET http://localhost:8000/api/v1/expenses
+
+
+### POST expenses 
+POST http://localhost:8000/api/v1/expenses
+Content-Type: application/json
+Authorization: 628c8ccb97e8d69ff8b24030
+
+{
+    "name": "Food",
+    "amount": 100,
+    "date": "2020-01-01"
+}
+
+
+### DELETE expenses 
+DELETE http://localhost:8000/api/v1/expenses
