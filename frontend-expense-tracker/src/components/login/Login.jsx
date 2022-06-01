@@ -18,6 +18,7 @@ export const Login = () => {
     }
     setLoading(true);
     const { data } = await postLogin({ email, password });
+    // console.log(data);
     setLoading(false);
 
     // if login success, store user data in session storage and redirect to the dashboard page
